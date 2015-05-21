@@ -1,0 +1,18 @@
+# legislator information
+rsync -avz govtrack.us::govtrackdata/congress-legislators .
+
+# legislator photos
+rsync -avz --exclude "archive/" --exclude "archive-1/" govtrack.us::govtrackdata/photos .
+
+# bills, full-text raw-text file, and votes for one congressional session
+rsync -avz --include "**/text-versions/**/document.txt" --exclude "**/text-versions/**/*" --exclude "text-versions.json" --exclude "*.pdf" --exclude "*.xml" --exclude "nominations/" --exclude "amendments/" govtrack.us::govtrackdata/congress/113 .
+
+
+-n to just retrieve filenames not data
+
+
+# get bills, votes and text form multiple sessions
+for var in $(seq 103 107)
+do
+   rsync -avz --include "**/text-versions/**/document.txt" --exclude "**/text-versions/**/*" --exclude "text-versions.json" --exclude "*.pdf" --exclude "*.xml" --exclude "nominations/" --exclude "amendments/" govtrack.us::govtrackdata/congress/$var .
+done
