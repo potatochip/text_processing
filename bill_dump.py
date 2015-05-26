@@ -23,7 +23,7 @@ def get_sessions():
 
 def remove_dot_key(obj):
     for key in obj.keys():
-        new_key = key.replace(".","")
+        new_key = key.replace(".", "")
         if new_key != key:
             obj[new_key] = obj[key]
             del obj[key]
@@ -33,25 +33,27 @@ def remove_dot_key(obj):
 def dear_mongo():
     sessions = get_sessions()
     for session in sessions:
+        print session
         for index, (root, dirs, files) in enumerate(os.walk(session)):
+            # if index == 5: break
             if dirs == ["text-versions"]:
                 if isfile(root + '/data.json'):
                     text_dict = {}
-                    for version in [f for f in listdir(root + '/text-versions/') if isdir(join(mypath,f)) ]:
+                    for version in [f for f in listdir(root + '/text-versions/') if isdir(root+'/text-versions/'+f)]:
                         doc_path = root + '/text-versions/' + version + '/document.txt'
                         if isfile(doc_path):
                             with open(doc_path) as f:
                                 text = f.read()
                             text_dict.update({version: text})
                     with open(root + '/data.json') as j:
-                        json_data = json.load(j)
-                    json_data.update({'text_versions': text_dict})
-                    print("saving: {0}".format(str(root)))
-                    bills.insert(json_data)
+                        bill_data = json.load(j)
+                    bill_data.update({'text_versions': text_dict})
+                    # print("saving: {0}".format(str(root)))
+                    bills.save(bill_data)
             if '/votes' in root:
                 for file in files:
                     if file == 'data.json':
-                        print('saving: ' + root + '/' + file)
+                        # print('saving: ' + root + '/' + file)
                         with open(root + '/' + file) as j:
                             j = json.load(j, object_hook=remove_dot_key)
                             try:
@@ -59,6 +61,5 @@ def dear_mongo():
                             except:
                                 print "except!"
 
-        # if index == 20: break
 
 dear_mongo()

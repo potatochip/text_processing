@@ -21,7 +21,7 @@ def mongo_save():
     tweets = db.tweets
     mypath = os.getcwd()
     onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-    tweet_files = [i for i in onlyfiles if i[-3:] == 'csv']
+    tweet_files = [i for i in onlyfiles if i.endswith('csv')]
 
     fieldnames = ("id", "created_at", "text", "retweets", "favorites")
     for i in tweet_files:
@@ -29,8 +29,10 @@ def mongo_save():
         reader = csv.DictReader(csvfile, fieldnames)
         reader.next()
         for row in reader:
-            save_me = json.dumps(row)[:-1] + ', ' + json.dumps({"handle": tweet_files[0][:-11]})[1:]
+            save_me = json.loads(json.dumps(row))
+            save_me.update({"handle": i[:-11]})
             tweets.insert(save_me)
+        print("working on {0}".format(i))
 
 
 def get_tweets():
@@ -41,6 +43,6 @@ def get_tweets():
             try:
                 tweet_dumper.get_all_tweets(handle)
             except:
-                print("problem with {0}".format(handle))
+                print("** problem with {0}".format(handle))
 
 mongo_save()

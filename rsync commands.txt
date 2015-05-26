@@ -12,7 +12,7 @@ rsync -avz --include "**/text-versions/**/document.txt" --exclude "**/text-versi
 
 
 # get bills, votes and text form multiple sessions
-for var in $(seq 103 107)
+for var in $(seq 103 114)
 do
    rsync -avz --include "**/text-versions/**/document.txt" --exclude "**/text-versions/**/*" --exclude "text-versions.json" --exclude "*.pdf" --exclude "*.xml" --exclude "nominations/" --exclude "amendments/" govtrack.us::govtrackdata/congress/$var .
 done
