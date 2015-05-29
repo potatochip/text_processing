@@ -3,7 +3,9 @@
 
 [Congressional Bills 106th Congress]
 [From the U.S. Government Printing Office]
-[H.R. 4053 Introduced in House (IH)]
+[H.R.
+***
+4053 Introduced in House (IH)]
 
 
 
@@ -27,8 +29,7 @@ _______________________________________________________________________
 
                              March 22, 2000
 
-  Mr. Gilman (for himself, Mr. Smith of New Jersey, Mr. Bereuter, Ms.
-***
+  Mr. Gilman (for himself, Mr. Smith of New Jersey, Mr. Bereuter, Ms. 
 Ros-Lehtinen, Mr. Rohrabacher, Mr. Goodling, Mr. Hyde, Mr. Gillmor, Mr. 
   McHugh, Mr. Armey, Mr. DeLay, Mr. Young of Florida, Mr. Spence, Mr. 
  Radanovich, Mr. Cooksey, Mr. Manzullo, Mr. Souder, Mr. Doolittle, Mr. 
@@ -49,7 +50,9 @@ fiscal year 2001, to authorize assistance for democratization in Serbia
 Be it enacted by the Senate and House of Representatives of the 
 United States of America in Congress assembled,
 
-SECTION 1. SHORT TITLE; TABLE OF CONTENTS.
+SECTION 1.
+***
+SHORT TITLE; TABLE OF CONTENTS.
 ***
 (a) Short Title.--This Act may be cited as the ``United States-
 Southeastern Europe Democratization and Burdensharing Act of 2000''.
@@ -59,7 +62,9 @@ follows:
 
 Sec.
 ***
-1. Short title; table of contents.
+1.
+***
+Short title; table of contents.
 ***
 TITLE I--UNITED STATES ASSISTANCE FOR THE COUNTRIES OF SOUTHEASTERN 
                                  EUROPE
@@ -78,19 +83,25 @@ Policy.
 ***
 Sec.
 ***
-103. Authorization of assistance to the countries of southeastern 
+103.
+***
+Authorization of assistance to the countries of southeastern 
                             Europe.
 ***
 Sec.
 ***
-104. Definition of countries of southeastern Europe.
+104.
+***
+Definition of countries of southeastern Europe.
 ***
 TITLE II--ASSISTANCE FOR DEMOCRACY BUILDING IN THE REPUBLIC OF SERBIA 
                      AND THE REPUBLIC OF MONTENEGRO
 
 Sec.
 ***
-201. Findings.
+201.
+***
+Findings.
 ***
 Sec.
 ***
@@ -101,7 +112,9 @@ Policy toward the Republic of Serbia and the Republic of
 ***
 Sec.
 ***
-203. Sense of the Congress regarding reconstruction in the 
+203.
+***
+Sense of the Congress regarding reconstruction in the 
                             Republic of Serbia.
 ***
 Sec.
@@ -113,7 +126,9 @@ Assistance for democratization in the Republic of Serbia and
 ***
 Sec.
 ***
-205. Prohibition on assistance to the Government of the Republic 
+205.
+***
+Prohibition on assistance to the Government of the Republic 
                             of Serbia.
 ***
 Sec.
@@ -127,7 +142,9 @@ TITLE III--ASSISTANCE TO THE REPUBLIC OF MONTENEGRO
 
 Sec.
 ***
-301. Findings.
+301.
+***
+Findings.
 ***
 Sec.
 ***
@@ -137,7 +154,9 @@ Policy toward the Republic of Montenegro.
 ***
 Sec.
 ***
-303. Sense of the Congress.
+303.
+***
+Sense of the Congress.
 ***
 Sec.
 ***
@@ -155,7 +174,9 @@ Policy toward the Former Yugoslav Republic of Macedonia.
 ***
 Sec.
 ***
-402. Sense of the Congress.
+402.
+***
+Sense of the Congress.
 ***
 Sec.
 ***
@@ -185,7 +206,9 @@ TITLE VI--POLICY REGARDING INDIVIDUALS INDICTED BY THE INTERNATIONAL
 
 Sec.
 ***
-601. Findings.
+601.
+***
+Findings.
 ***
 Sec.
 ***
@@ -241,7 +264,9 @@ The Congress declares the following:
 ***
 SEC.
 ***
-103. AUTHORIZATION OF ASSISTANCE TO THE COUNTRIES OF SOUTHEASTERN 
+103.
+***
+AUTHORIZATION OF ASSISTANCE TO THE COUNTRIES OF SOUTHEASTERN 
               EUROPE.
 ***
 (a) Support for Political and Economic Reforms in Southeastern 
@@ -293,7 +318,9 @@ and the Foreign Assistance Act of 1961 (22
 ***
 SEC.
 ***
-104. DEFINITION OF COUNTRIES OF SOUTHEASTERN EUROPE.
+104.
+***
+DEFINITION OF COUNTRIES OF SOUTHEASTERN EUROPE.
 ***
 In this title, the term ``countries of southeastern Europe'' means 
 the Republic of Slovenia, the Republic of Croatia, Bosnia and 
@@ -305,7 +332,9 @@ TITLE II--ASSISTANCE FOR DEMOCRACY BUILDING IN THE REPUBLIC OF SERBIA
 
 SEC.
 ***
-201. FINDINGS.
+201.
+***
+FINDINGS.
 ***
 The Congress finds the following:
             (1) In multi-party elections held in the Republic of Serbia 
@@ -383,7 +412,9 @@ rights, promoting rule of law, and fostering tolerance in society.
 ***
 SEC.
 ***
-203. SENSE OF THE CONGRESS REGARDING RECONSTRUCTION IN THE 
+203.
+***
+SENSE OF THE CONGRESS REGARDING RECONSTRUCTION IN THE 
               REPUBLIC OF SERBIA.
 ***
 It is the sense of the Congress that--
@@ -509,7 +540,9 @@ organizations, and individuals that--
 ***
 SEC.
 ***
-205. PROHIBITION ON ASSISTANCE TO THE GOVERNMENT OF THE REPUBLIC 
+205.
+***
+PROHIBITION ON ASSISTANCE TO THE GOVERNMENT OF THE REPUBLIC 
               OF SERBIA.
 ***
 Amounts made available under this Act, including any programs or 
@@ -554,7 +587,9 @@ TITLE III--ASSISTANCE TO THE REPUBLIC OF MONTENEGRO
 
 SEC.
 ***
-301. FINDINGS.
+301.
+***
+FINDINGS.
 ***
 The Congress finds the following:
             (1) The election of former Montenegrin Prime Minister Milo 
@@ -625,7 +660,9 @@ ethnic background.
 ***
 SEC.
 ***
-303. SENSE OF THE CONGRESS.
+303.
+***
+SENSE OF THE CONGRESS.
 ***
 It is the sense of the Congress that--
             (1) the Government of the Republic of Montenegro should 
@@ -700,7 +737,9 @@ It is the policy of the United States--
 ***
 SEC.
 ***
-402. SENSE OF THE CONGRESS.
+402.
+***
+SENSE OF THE CONGRESS.
 ***
 It is the sense of the Congress that--
             (1) the Former Yugoslav Republic of Macedonia is to be 
@@ -936,7 +975,9 @@ TITLE VI--POLICY REGARDING INDIVIDUALS INDICTED BY THE INTERNATIONAL
 
 SEC.
 ***
-601. FINDINGS.
+601.
+***
+FINDINGS.
 ***
 The Congress finds the following:
             (1) On May 25, 1993, United Nations Security Council 

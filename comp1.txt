@@ -27,8 +27,7 @@ _______________________________________________________________________
 
                              March 22, 2000
 
-  Mr. Gilman (for himself, Mr. Smith of New Jersey, Mr. Bereuter, Ms.
-***
+  Mr. Gilman (for himself, Mr. Smith of New Jersey, Mr. Bereuter, Ms. 
 Ros-Lehtinen, Mr. Rohrabacher, Mr. Goodling, Mr. Hyde, Mr. Gillmor, Mr. 
   McHugh, Mr. Armey, Mr. DeLay, Mr. Young of Florida, Mr. Spence, Mr. 
  Radanovich, Mr. Cooksey, Mr. Manzullo, Mr. Souder, Mr. Doolittle, Mr. 
@@ -57,124 +56,84 @@ Southeastern Europe Democratization and Burdensharing Act of 2000''.
 (b) Table of Contents.--The table of contents of this Act is as 
 follows:
 
-Sec.
-***
-1. Short title; table of contents.
+Sec. 1. Short title; table of contents.
 ***
 TITLE I--UNITED STATES ASSISTANCE FOR THE COUNTRIES OF SOUTHEASTERN 
                                  EUROPE
 
-Sec.
-***
-101.
+Sec. 101.
 ***
 Finding.
 ***
-Sec.
-***
-102.
+Sec. 102.
 ***
 Policy.
 ***
-Sec.
-***
-103. Authorization of assistance to the countries of southeastern 
+Sec. 103. Authorization of assistance to the countries of southeastern 
                             Europe.
 ***
-Sec.
-***
-104. Definition of countries of southeastern Europe.
+Sec. 104. Definition of countries of southeastern Europe.
 ***
 TITLE II--ASSISTANCE FOR DEMOCRACY BUILDING IN THE REPUBLIC OF SERBIA 
                      AND THE REPUBLIC OF MONTENEGRO
 
-Sec.
+Sec. 201. Findings.
 ***
-201. Findings.
-***
-Sec.
-***
-202.
+Sec. 202.
 ***
 Policy toward the Republic of Serbia and the Republic of 
                             Montenegro.
 ***
-Sec.
-***
-203. Sense of the Congress regarding reconstruction in the 
+Sec. 203. Sense of the Congress regarding reconstruction in the 
                             Republic of Serbia.
 ***
-Sec.
-***
-204.
+Sec. 204.
 ***
 Assistance for democratization in the Republic of Serbia and 
                             the Republic of Montenegro.
 ***
-Sec.
-***
-205. Prohibition on assistance to the Government of the Republic 
+Sec. 205. Prohibition on assistance to the Government of the Republic 
                             of Serbia.
 ***
-Sec.
-***
-206.
+Sec. 206.
 ***
 Development of political contacts relating to the Republic of 
                             Serbia and the Republic of Montenegro.
 ***
 TITLE III--ASSISTANCE TO THE REPUBLIC OF MONTENEGRO
 
-Sec.
+Sec. 301. Findings.
 ***
-301. Findings.
-***
-Sec.
-***
-302.
+Sec. 302.
 ***
 Policy toward the Republic of Montenegro.
 ***
-Sec.
+Sec. 303. Sense of the Congress.
 ***
-303. Sense of the Congress.
-***
-Sec.
-***
-304.
+Sec. 304.
 ***
 Assistance to the Republic of Montenegro.
 ***
 TITLE IV--ASSISTANCE TO THE FORMER YUGOSLAV REPUBLIC OF MACEDONIA
 
-Sec.
-***
-401.
+Sec. 401.
 ***
 Policy toward the Former Yugoslav Republic of Macedonia.
 ***
-Sec.
+Sec. 402. Sense of the Congress.
 ***
-402. Sense of the Congress.
-***
-Sec.
-***
-403.
+Sec. 403.
 ***
 Assistance for the Former Yugoslav Republic of Macedonia.
 ***
 TITLE V--EQUITABLE BURDENSHARING REQUIREMENT FOR ASSISTANCE FOR 
                        SOUTHEASTERN EUROPE REGION
 
-Sec.
-***
-501.
+Sec. 501.
 ***
 Equitable burdensharing requirement.
 ***
-Sec.
-***
-502.
+Sec. 502.
 ***
 Statement of policy on the participation of the European 
                             Union in the International Police in 
@@ -183,22 +142,16 @@ Statement of policy on the participation of the European
 TITLE VI--POLICY REGARDING INDIVIDUALS INDICTED BY THE INTERNATIONAL 
               CRIMINAL TRIBUNAL FOR THE FORMER YUGOSLAVIA
 
-Sec.
+Sec. 601. Findings.
 ***
-601. Findings.
-***
-Sec.
-***
-602.
+Sec. 602.
 ***
 Declaration of policy.
 ***
 TITLE I--UNITED STATES ASSISTANCE FOR THE COUNTRIES OF SOUTHEASTERN 
                                  EUROPE
 
-SEC.
-***
-101.
+SEC. 101.
 ***
 FINDING.
 ***
@@ -212,9 +165,7 @@ background and toward a market-based economy that may contribute to the
 prosperity that reinforces democratic government, multiethnic harmony, 
 peace, and stability.
 ***
-SEC.
-***
-102.
+SEC. 102.
 ***
 POLICY.
 ***
@@ -239,36 +190,23 @@ The Congress declares the following:
         countries of southeastern Europe to address challenges to 
         political and economic reforms.
 ***
-SEC.
-***
-103. AUTHORIZATION OF ASSISTANCE TO THE COUNTRIES OF SOUTHEASTERN 
+SEC. 103. AUTHORIZATION OF ASSISTANCE TO THE COUNTRIES OF SOUTHEASTERN 
               EUROPE.
 ***
 (a) Support for Political and Economic Reforms in Southeastern 
 Europe.--The President is authorized to provide appropriate support for 
 political and economic reforms in the countries of southeastern Europe 
 from the amount appropriated for fiscal year 2001 to carry out the 
-Support for East European Democracy (SEED) Act of 1989 (22 U.S.C.
-***
-5401 
-et seq.)
-***
-and the Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et 
+Support for East European Democracy (SEED) Act of 1989 (22 U.S.C. 5401 
+et seq.) and the Foreign Assistance Act of 1961 (22 U.S.C. 2151 et 
 seq.).
 ***
 (b) Support for Political and Economic Reforms in the Kosovo 
 Region.--The President is authorized to provide appropriate support for 
 political and economic reforms in the Kosovo region of the Republic of 
 Serbia from the amount appropriated for fiscal year 2001 to carry out 
-the Support for East European Democracy (SEED) Act of 1989 (22 U.S.C.
-***
-5401 et seq.)
-***
-and the Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et 
+the Support for East European Democracy (SEED) Act of 1989 (22 U.S.C. 
+5401 et seq.) and the Foreign Assistance Act of 1961 (22 U.S.C. 2151 et 
 seq.).
 ***
 (c) Limitation on Assistance for the Republic of Serbia.--
@@ -277,23 +215,15 @@ seq.).
         to title II of this Act, or for strictly humanitarian purposes, 
         from the amount appropriated for fiscal year 2001 to carry out 
         the Support for East European Democracy (SEED) Act of 1989 (22 
-        U.S.C.
-***
-5401 et seq.)
-***
-and the Foreign Assistance Act of 1961 (22 
-        U.S.C.
-***
-2151 et seq.).
+        U.S.C. 5401 et seq.) and the Foreign Assistance Act of 1961 (22 
+        U.S.C. 2151 et seq.).
 ***
 (2) Exception.--The limitation in paragraph (1) shall not 
         apply if the President determines that the Government of Serbia 
         has undertaken steps to become truly democratic and to ensure 
         equal rights for all citizens of the Republic of Serbia.
 ***
-SEC.
-***
-104. DEFINITION OF COUNTRIES OF SOUTHEASTERN EUROPE.
+SEC. 104. DEFINITION OF COUNTRIES OF SOUTHEASTERN EUROPE.
 ***
 In this title, the term ``countries of southeastern Europe'' means 
 the Republic of Slovenia, the Republic of Croatia, Bosnia and 
@@ -303,9 +233,7 @@ Macedonia, the Republic of Bulgaria, and Romania.
 TITLE II--ASSISTANCE FOR DEMOCRACY BUILDING IN THE REPUBLIC OF SERBIA 
                      AND THE REPUBLIC OF MONTENEGRO
 
-SEC.
-***
-201. FINDINGS.
+SEC. 201. FINDINGS.
 ***
 The Congress finds the following:
             (1) In multi-party elections held in the Republic of Serbia 
@@ -369,9 +297,7 @@ The Congress finds the following:
         a clear relationship between the instigation of interethnic 
         conflict and the denial of democratic development.
 ***
-SEC.
-***
-202.
+SEC. 202.
 ***
 POLICY TOWARD THE REPUBLIC OF SERBIA AND THE REPUBLIC OF 
               MONTENEGRO.
@@ -381,9 +307,7 @@ development of democracy in Serbia and Montenegro and those who are
 committed to the building of democratic institutions, defending human 
 rights, promoting rule of law, and fostering tolerance in society.
 ***
-SEC.
-***
-203. SENSE OF THE CONGRESS REGARDING RECONSTRUCTION IN THE 
+SEC. 203. SENSE OF THE CONGRESS REGARDING RECONSTRUCTION IN THE 
               REPUBLIC OF SERBIA.
 ***
 It is the sense of the Congress that--
@@ -405,9 +329,7 @@ It is the sense of the Congress that--
         through support for programs managed by international financial 
         institutions.
 ***
-SEC.
-***
-204.
+SEC. 204.
 ***
 ASSISTANCE FOR DEMOCRATIZATION IN THE REPUBLIC OF SERBIA AND 
               THE REPUBLIC OF MONTENEGRO.
@@ -416,16 +338,8 @@ ASSISTANCE FOR DEMOCRATIZATION IN THE REPUBLIC OF SERBIA AND
             (1) Availability of amounts for serbia and montenegro.--Of 
         the amount appropriated for fiscal year 2001 to carry out the 
         Support for East European Democracy (SEED) Act of 1989 (22 
-        U.S.C.
-***
-5401 et seq.)
-***
-and the Foreign Assistance Act of 1961 (22 
-        U.S.C.
-***
-2151 et seq.
-***
-), $42,000,000 shall be available for 
+        U.S.C. 5401 et seq.) and the Foreign Assistance Act of 1961 (22 
+        U.S.C. 2151 et seq.), $42,000,000 shall be available for 
         democracy building and related assistance described in 
         subsection (b) in all regions of the Republic of Serbia, other 
         than the region of Kosovo, and in the Republic of Montenegro.
@@ -433,16 +347,8 @@ and the Foreign Assistance Act of 1961 (22
 (2) Availability of amounts for kosovo.--Notwithstanding 
         section 103(c) of this Act, the amount appropriated for fiscal 
 year 2001 to carry out the Support for East European Democracy (SEED) 
-Act of 1989 (22 U.S.C.
-***
-5401 et seq.)
-***
-and the Foreign Assistance Act of 
-1961 (22 U.S.C.
-***
-2151 et seq.)
-***
-shall be available for democracy building 
+Act of 1989 (22 U.S.C. 5401 et seq.) and the Foreign Assistance Act of 
+1961 (22 U.S.C. 2151 et seq.) shall be available for democracy building 
 and related assistance described in subsection (b) in the region of 
 Kosovo.
 ***
@@ -507,9 +413,7 @@ organizations, and individuals that--
         Socialist Federal Republic of Yugoslavia or any of the 
         independent states which have emerged therefrom, since 1991.
 ***
-SEC.
-***
-205. PROHIBITION ON ASSISTANCE TO THE GOVERNMENT OF THE REPUBLIC 
+SEC. 205. PROHIBITION ON ASSISTANCE TO THE GOVERNMENT OF THE REPUBLIC 
               OF SERBIA.
 ***
 Amounts made available under this Act, including any programs or 
@@ -524,9 +428,7 @@ democratic government in the Republic of Serbia that will ensure equal
 rights of all of Serbia's citizens, regardless of ethnic background, 
 and reforms intended to create a market-based economy.
 ***
-SEC.
-***
-206.
+SEC. 206.
 ***
 DEVELOPMENT OF POLITICAL CONTACTS RELATING TO THE REPUBLIC OF 
               SERBIA AND THE REPUBLIC OF MONTENEGRO.
@@ -552,9 +454,7 @@ Cooperation in Europe (OSCE) and the OSCE Parliamentary Assembly--
 ***
 TITLE III--ASSISTANCE TO THE REPUBLIC OF MONTENEGRO
 
-SEC.
-***
-301. FINDINGS.
+SEC. 301. FINDINGS.
 ***
 The Congress finds the following:
             (1) The election of former Montenegrin Prime Minister Milo 
@@ -612,9 +512,7 @@ The Congress finds the following:
         Republic of Montenegro accepted tens of thousands of refugees 
         from the neighboring region of Kosovo in Serbia.
 ***
-SEC.
-***
-302.
+SEC. 302.
 ***
 POLICY TOWARD THE REPUBLIC OF MONTENEGRO.
 ***
@@ -623,9 +521,7 @@ development in Montenegro of a market-based economy and a democratic
 government based on equal rights for all of its citizens, regardless of 
 ethnic background.
 ***
-SEC.
-***
-303. SENSE OF THE CONGRESS.
+SEC. 303. SENSE OF THE CONGRESS.
 ***
 It is the sense of the Congress that--
             (1) the Government of the Republic of Montenegro should 
@@ -648,31 +544,19 @@ It is the sense of the Congress that--
         relief from official debt through rescheduling and, where 
         appropriate, forgiveness.
 ***
-SEC.
-***
-304.
+SEC. 304.
 ***
 ASSISTANCE TO THE REPUBLIC OF MONTENEGRO.
 ***
 Of the amount appropriated for fiscal year 2001 to carry out the 
-Support for East European Democracy (SEED) Act of 1989 (22 U.S.C.
-***
-5401 
-et seq.)
-***
-and the Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et 
-seq.
-***
-), $55,000,000 shall be made available for assistance for political 
+Support for East European Democracy (SEED) Act of 1989 (22 U.S.C. 5401 
+et seq.) and the Foreign Assistance Act of 1961 (22 U.S.C. 2151 et 
+seq.), $55,000,000 shall be made available for assistance for political 
 and economic reforms in the Republic of Montenegro.
 ***
 TITLE IV--ASSISTANCE TO THE FORMER YUGOSLAV REPUBLIC OF MACEDONIA
 
-SEC.
-***
-401.
+SEC. 401.
 ***
 POLICY TOWARD THE FORMER YUGOSLAV REPUBLIC OF MACEDONIA.
 ***
@@ -698,9 +582,7 @@ It is the policy of the United States--
         caused by the large influx of refugees into Macedonia during 
         the recent conflict with regard to the region of Kosovo.
 ***
-SEC.
-***
-402. SENSE OF THE CONGRESS.
+SEC. 402. SENSE OF THE CONGRESS.
 ***
 It is the sense of the Congress that--
             (1) the Former Yugoslav Republic of Macedonia is to be 
@@ -746,24 +628,14 @@ the government to control the free flow of alternative media;
         of ethnic Albanian background in the officer corps of those 
         armed forces.
 ***
-SEC.
-***
-403.
+SEC. 403.
 ***
 ASSISTANCE FOR THE FORMER YUGOSLAV REPUBLIC OF MACEDONIA.
 ***
 (a) Assistance for Economic and Political Reforms.--Of the amount 
 appropriated for fiscal year 2001 to carry out the Support for East 
-European Democracy (SEED) Act of 1989 (22 U.S.C.
-***
-5401 et seq.)
-***
-and the 
-Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et seq.
-***
-), $43,450,000 
+European Democracy (SEED) Act of 1989 (22 U.S.C. 5401 et seq.) and the 
+Foreign Assistance Act of 1961 (22 U.S.C. 2151 et seq.), $43,450,000 
 shall be made available for assistance for economic and political 
 reforms in the Former Yugoslav Republic of Macedonia.
 ***
@@ -771,17 +643,9 @@ reforms in the Former Yugoslav Republic of Macedonia.
 Macedonia.--
             (1) In general.--Of the amounts appropriated for each of 
         the fiscal years 2001 through 2004 to carry out the Support for 
-        East European Democracy (SEED) Act of 1989 (22 U.S.C.
-***
-5401 et 
-        seq.)
-***
-and the Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et 
-        seq.
-***
-), not less than $5,000,000 for fiscal year 2001 and not 
+        East European Democracy (SEED) Act of 1989 (22 U.S.C. 5401 et 
+        seq.) and the Foreign Assistance Act of 1961 (22 U.S.C. 2151 et 
+        seq.), not less than $5,000,000 for fiscal year 2001 and not 
         less than $10,000,000 for each of the fiscal years 2002 through 
         2004 shall be made available for the establishment and support 
         of the faculty and programs of an American University for 
@@ -820,28 +684,20 @@ East-West trade corridor across those countries.
 available under subsection (a), not less than $2,000,000 shall be made 
 available for assistance for the Former Yugoslav Republic of Macedonia 
 under the ``Foreign Military Financing Program'' account under section 
-23 of the Arms Export Control Act (22 U.S.C.
-***
-2763).
+23 of the Arms Export Control Act (22 U.S.C. 2763).
 ***
 (f) International Military Education and Training.--Of the amount 
 made available under subsection (a), the President shall make available 
 such amount as is necessary and appropriate for assistance for the 
 Former Yugoslav Republic of Macedonia under chapter 5 of part II of the 
-Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2347 et seq.)
-***
-in order to 
+Foreign Assistance Act of 1961 (22 U.S.C. 2347 et seq.) in order to 
 substantially upgrade the quality and availability of training for 
 officers and non-commissioned officers of Macedonia.
 ***
 TITLE V--EQUITABLE BURDENSHARING REQUIREMENT FOR ASSISTANCE FOR 
                        SOUTHEASTERN EUROPE REGION
 
-SEC.
-***
-501.
+SEC. 501.
 ***
 EQUITABLE BURDENSHARING REQUIREMENT.
 ***
@@ -852,15 +708,8 @@ EQUITABLE BURDENSHARING REQUIREMENT.
         of southeastern Europe (as defined in section 104), the 
         Republic of Montenegro, and the Kosovo region of the 
 Republic of Serbia for the fiscal years 2001 through 2005 under the 
-Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et seq.)
-***
-and the Support 
-for East European Democracy (SEED) Act of 1989 (22 U.S.C.
-***
-5401 et seq.)
-***
+Foreign Assistance Act of 1961 (22 U.S.C. 2151 et seq.) and the Support 
+for East European Democracy (SEED) Act of 1989 (22 U.S.C. 5401 et seq.) 
 may not exceed an amount equal to 15 percent of the total amount of 
 multilateral assistance described in subsection (b) provided to such 
 countries, the Republic of Montenegro, and the Kosovo region of the 
@@ -894,17 +743,9 @@ Republic of Serbia for such fiscal years 2001 through 2005.
         countries of southeastern Europe (as defined in section 104), 
         the Republic of Montenegro, and the Kosovo region of the 
         Republic of Serbia for the subsequent fiscal years under the 
-        Foreign Assistance Act of 1961 (22 U.S.C.
-***
-2151 et seq.)
-***
-and the 
+        Foreign Assistance Act of 1961 (22 U.S.C. 2151 et seq.) and the 
         Support for East European Democracy (SEED) Act of 1989 (22 
-        U.S.C.
-***
-5401 et seq.)
-***
-shall be reduced by the excess amount 
+        U.S.C. 5401 et seq.) shall be reduced by the excess amount 
         determined under paragraph (2)(B).
 ***
 (b) Multilateral Assistance Described.--The multilateral assistance 
@@ -917,9 +758,7 @@ described in this subsection is assistance--
         programs established or carried out for the region of 
         southeastern Europe.
 ***
-SEC.
-***
-502.
+SEC. 502.
 ***
 STATEMENT OF POLICY ON THE PARTICIPATION OF THE EUROPEAN 
               UNION IN THE INTERNATIONAL POLICE IN KOSOVO.
@@ -934,9 +773,7 @@ possible.
 TITLE VI--POLICY REGARDING INDIVIDUALS INDICTED BY THE INTERNATIONAL 
               CRIMINAL TRIBUNAL FOR THE FORMER YUGOSLAVIA
 
-SEC.
-***
-601. FINDINGS.
+SEC. 601. FINDINGS.
 ***
 The Congress finds the following:
             (1) On May 25, 1993, United Nations Security Council 
@@ -973,9 +810,7 @@ The Congress finds the following:
         whose forces have committed war crimes, crimes against 
         humanity, or genocide.
 ***
-SEC.
-***
-602.
+SEC. 602.
 ***
 DECLARATION OF POLICY.
 ***
