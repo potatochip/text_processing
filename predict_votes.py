@@ -3,8 +3,9 @@ from pymongo import MongoClient
 
 import nltk
 import re
-import mpld3
+import pickle
 import random
+import string
 
 import pandas as pd
 import numpy as np
@@ -22,6 +23,9 @@ from sklearn.grid_search import GridSearchCV
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.cross_validation import cross_val_score
+from sklearn import metrics
+
+from pymongo.cursor import CursorType
 
 
 # Display progress logs on stdout
@@ -31,36 +35,30 @@ logging.basicConfig(level=logging.INFO,
 
 client = MongoClient()
 db = client.legislation
-bills = db.bills
-votes = db.votes
-combo = db.combo
-
-
-# Read in training corpus
-cursor = combo.find({"subjects_top_term": {"$exists": "true"}}, {"_id": 0},
-                     no_cursor_timeout=True, limit=2000)
-titles, texts, categories, congress, bill_type, number, subject_top, subjects, sponsor,\
-    requires, result = zip(*[(i['official_title'], i["text_versions"].itervalues().next(),
-                                i["category"], i["congress"], i["bill_type"], i["number"],
-                                i["subjects_top_term"], i["subjects"], i["sponsor"], i["requires"],
-                                i["result"]) for i in cursor])
-bills = {'title': titles, 'vote': result, 'text': texts, 'sponsor': sponsor,
-            "subject_top": subject_top, "subjects": subjects, 'category': categories,
-            'congress': congress, 'bill_type': bill_type, 'number': number, 'requires': requires}
-df = pd.DataFrame(bills, columns=['vote', 'title', 'sponsor', 'subject_top',
-                                    'subjects', 'category', 'requires', 'text'])
-df['Passed'] = pd.get_dummies(df['vote'])['Passed']
-
-# get sample
-# df = random.sample(df, 2000)
-X = df.drop('Passed', axis=1)
-y = df.Passed
-# X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
 
 stopwords = nltk.corpus.stopwords.words('english')
 stemmer = SnowballStemmer("english")
 
+limit = 500  # limit sample size for testing. 
+
+with open('sentence_tokenizer_full.pickle', 'rb') as f:
+    custom_tokenizer = pickle.load(f)
+
+
+def static_vars(**kwargs):
+    def decorate(func):
+        for k in kwargs:
+            setattr(func, k, kwargs[k])
+        return func
+    return decorate
+
+
+@static_vars(counter=0)
+def update_pbar():
+    if update_pbar.counter != limit:
+        update_pbar.counter += 1
+    pbar.update(update_pbar.counter)
 
 def get_voted_bills():
     # creates a new database saving important vote and bill information together
@@ -82,44 +80,77 @@ def get_voted_bills():
         try:
             bill_data.update({'category': vote['category'], 'result': vote['result'],
                                 'requires': vote['requires']})
-            combo.insert_one(bill_data)
+            db.combo.insert_one(bill_data)
         except:
             print("Can't find bill {}-{}-{} for known vote".format(session, billtype, number))
-
         pbar.update(i)
     pbar.finish()
 
 
-def tokenize(text, stemmed=True):
-    # first tokenize by sentence, then by word
-    # to ensure that punctuation is caught as it's own token
-    tokens = [word.lower() for sent in nltk.sent_tokenize(text) for word
-                in nltk.word_tokenize(sent)]
+def get_corpus():
+    # Read in training corpus
+    print("Getting documents")
+    cursor = db.combo.find({}, {"text_versions": 1, "result": 1, "_id": 0},
+                         no_cursor_timeout=True, cursor_type=CursorType.EXHAUST)
+    df = pd.DataFrame()
+    pbar = ProgressBar(maxval=limit).start()
+    for index, row in enumerate(cursor):
+        if index == limit: break
+        df = df.append(row, ignore_index=True)
+        pbar.update(index)
+    pbar.finish()
+    cursor.close()
+
+    # df['Passed'] = pd.get_dummies(df['result'])['Passed']
+
+    # # get sample
+    # failed = df[df.Passed == 0]
+    # passed = df[df.Passed == 1].ix[random.sample(df[df.Passed == 1].index, failed.Passed.count())]
+    # df = passed.append(failed)
+    # df = random.sample(df, 1000)
+
+    X = df.text_versions.apply(lambda x: x.itervalues().next())  # choose one text versions
+    y = pd.get_dummies(df['result'])['Passed']
+    print("\nVotes Breakdown for {} votes".format(df.result.count()))
+    print(df.result.value_counts(normalize=True))
+    return X, y
+
+
+def tokenize(text, stemmed=False):
+
+    # words = nltk.word_tokenize(sentences)
+    no_punctuation = text.lower().encode('utf-8').translate(None, string.punctuation)
+    words = nltk.word_tokenize(no_punctuation)
+    custom_stop = ['sec', 'section', ]
+    stop_words = stopwords + custom_stop
+    stopped = [i for i in words if i not in stop_words]
     filtered_tokens = []
     # filter out any tokens not containing letters (e.g., numeric tokens, raw punctuation)
-    for token in tokens:
+    for token in stopped:
         if re.search('[a-zA-Z]', token):
             filtered_tokens.append(token)
     if stemmed:
         stems = [stemmer.stem(t) for t in filtered_tokens]
-        return stems
-    else:
-        return filtered_tokens
-
+        tokens = stems
+    update_pbar()
+    return filtered_tokens
 
 def multinomial_model():
     # # uncomment to save, comment to load model
-    # text_clf = Pipeline([('vect', CountVectorizer(tokenizer=tokenize, stop_words='english', max_df=0.8, max_features=200000, min_df=0.2, ngram_range=(1,3), use_idf=True)),
-    #                     ('tfidf', TfidfTransformer()),
-    #                     ('clf', SGDClassifier(loss='hinge', penalty='l2',
-    #                                             alpha=1e-3, n_iter=5, random_state=42)), ])
-    # text_clf = text_clf.fit(X_train.text, y_train)
-    # joblib.dump(text_clf, 'model.pkl')
+    text_clf = Pipeline([('vect', CountVectorizer(tokenizer=tokenize, stop_words='english',
+                                                    max_df=0.8, max_features=200000, min_df=0.2,
+                                                    ngram_range=(1, 3), use_idf=True)),
+                        ('tfidf', TfidfTransformer()),
+                        ('clf', SGDClassifier(loss='hinge', penalty='l2',
+                                                alpha=1e-3, n_iter=5, random_state=42)),
+                         ])
+    text_clf = text_clf.fit(X_train, y_train)
+    joblib.dump(text_clf, 'model.pkl')
 
-    text_clf = joblib.load('model.pkl')
+    # text_clf = joblib.load('model.pkl')
 
     # # predict on model
-    # docs_new = X_test.text
+    # docs_new = X_test
     # doc_titles = X_test.title
     # X_new_tfidf = tfidf_vectorizer.transform(doc_titles)
     # predicted = clf.predict(X_new_tfidf)
@@ -127,12 +158,34 @@ def multinomial_model():
     #     print(bill)
     #     print((lambda x: 'Passed' if x == 1 else 'Failed')(vote))
 
-    # docs_test = X_test.text
-    predicted = cross_val_score(text_clf, X.text, y)
-    # predicted = text_clf.predict(docs_test)
-    print predicted
-    # print("Accuracy of {}".format(np.mean(predicted == y_test)))
-    print df.vote.value_counts()
+
+def griddy(pipeline):
+    # get best params with cross fold validation for both the feature extraction and the classifier
+    parameters = {
+        'vect__max_df': (0.5, 0.75, 1.0),
+        'vect__max_features': (None, 5000, 10000, 50000),
+        'vect__ngram_range': ((1, 1), (1, 2), (1, 3)),  # words or bigrams
+        # 'tfidf__use_idf': (True, False),
+        # 'tfidf__norm': ('l1', 'l2'),
+        # 'clf__alpha': (0.00001, 0.000001),
+        # 'clf__penalty': ('l2', 'elasticnet'),
+        # 'clf__n_iter': (10, 50, 80),
+    }
+
+    grid_search = GridSearchCV(pipeline, parameters, n_jobs=3, verbose=1)
+    print "Performing grid search..."
+    print "pipeline:", [name for name, _ in pipeline.steps]
+    print "parameters:"
+    pprint(parameters)
+    t0 = time()
+    grid_search.fit(X, y)
+    print "done in %0.3fs" % (time() - t0)
+    print
+    print "Best score: %0.3f" % grid_search.best_score_
+    print "Best parameters set:"
+    best_parameters = grid_search.best_estimator_.get_params()
+    for param_name in sorted(parameters.keys()):
+        print "\t%s: %r" % (param_name, best_parameters[param_name])
 
 
 ###################
@@ -141,37 +194,29 @@ pipeline = Pipeline([
     ('vect', CountVectorizer()),
     ('tfidf', TfidfTransformer()),
     ('clf', SGDClassifier()),
+    # ('clf', MultinomialNB()),
 ])
 
-parameters = {
-    'vect__max_df': (0.5, 0.75, 1.0),
-    # 'vect__max_features': (None, 5000, 10000, 50000),
-    # 'vect__max_n': (1, 2),  # words or bigrams
-    'tfidf__use_idf': (True, False),
-    # 'tfidf__norm': ('l1', 'l2'),
-    # 'clf__alpha': (0.00001, 0.000001),
-    'clf__penalty': ('l2', 'elasticnet'),
-    # 'clf__n_iter': (10, 50, 80),
-}
 
 if __name__ == "__main__":
-    # multiprocessing requires the fork to happen in a __main__ protected block
-    # find the best parameters for both the feature extraction and the classifier
-    grid_search = GridSearchCV(pipeline, parameters, n_jobs=-1, verbose=1)
+    X, y = get_corpus()
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 
-    print "Performing grid search..."
-    print "pipeline:", [name for name, _ in pipeline.steps]
-    print "parameters:"
-    pprint(parameters)
-    t0 = time()
-    grid_search.fit(X.text, y)
-    print "done in %0.3fs" % (time() - t0)
-    print
-    print "Best score: %0.3f" % grid_search.best_score_
-    print "Best parameters set:"
-    best_parameters = grid_search.best_estimator_.get_params()
-    for param_name in sorted(parameters.keys()):
-        print "\t%s: %r" % (param_name, best_parameters[param_name])
+    # # multiprocessing requires the fork to happen in a __main__ protected block
+    griddy(pipeline)
+
+    # print("\nCalculating scores")
+    # pbar = ProgressBar(maxval=len(y)).start()
+
+    # # full report
+    # text_clf = pipeline.fit(X_train, y_train)
+    # predicted = text_clf.predict(X_test)
+    # print(metrics.classification_report(y_test, predicted))
+
+    # cross validated accuracy score
+    # predicted = cross_val_score(pipeline, X, y, n_jobs=1)
+    # print("Accuracy of {}".format(np.mean(predicted)))
+    # pbar.finish()
 
 
 # get_voted_bills()
